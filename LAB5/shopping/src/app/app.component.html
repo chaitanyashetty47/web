@@ -1,0 +1,19 @@
+<div id="parent">
+<div id="container">
+<p id="header">Shopping Cart</p>
+<input (keyup)="onKey1($event)" type="text" name="name" id="name" placeholder="Your Product....">
+<input (keyup)="onKey2($event)" type="number" name="quantity" id="quantity" placeholder="Your Quantity...">
+<br>
+<button id="add" (click)="Add()">Add Items</button>
+<br>
+<input (keyup)="onKey3($event)" type="number" name="quantity" id="quantity" placeholder="Enter
+ index of item you want to delete">
+<button id="remove" (click)="Remove()">Delete Items</button>
+</div>
+<div id="listItem" >
+  <p>List Item</p>
+<ol *ngFor="let item of arr ,index as i">
+<div>{{i+1}}&#x2022; {{item}} &nbsp; : {{numberOfItem[i]}}</div>
+</ol>
+</div>
+</div>

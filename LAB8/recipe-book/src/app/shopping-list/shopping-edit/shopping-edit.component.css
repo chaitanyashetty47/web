@@ -1,0 +1,30 @@
+.addbut{
+  color: rgb(253, 142, 7);
+}
+
+.editbut{
+  color: rgb(253,142,7);
+}
+
+.deletebut{
+  color: rgb(253,142,7);
+}
+
+button{
+  border-radius: 10px;
+  width:70px;
+  height:40px;
+}
+
+button:hover{
+  transition: .25s;
+  background-color: black;
+}
+
+input{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

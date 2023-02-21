@@ -1,0 +1,12 @@
+.recipe-img{
+  float:right;
+}
+
+.recipe-image{
+  object-fit:cover;
+  height: 100px;
+  width:200px;
+}
+.recipedes{
+  float:left;
+}

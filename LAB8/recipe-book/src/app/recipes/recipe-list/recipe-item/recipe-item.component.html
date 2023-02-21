@@ -1,0 +1,9 @@
+<div class="list-group-item clearfix" (click)="onSelected()">
+  <div class="recipedes">
+    <h4 class="describe">{{ recipe.name }} </h4> 
+    <p class="describe">{{ recipe.description }}  </p>
+  </div>
+  <span class="recipe-img">
+    <img [src]="recipe.imagePath" class="img-responsive" style="max-height: 50px;">
+  </span>
+</div>

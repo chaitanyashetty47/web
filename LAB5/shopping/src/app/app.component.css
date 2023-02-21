@@ -1,0 +1,79 @@
+#parent {
+  margin: auto;
+  padding: 50px;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+#container {
+  flex: 1;
+  border: 2px solid yellow;
+  margin-right: 20px;
+} 
+
+#listItem {
+  flex: 1;
+} 
+
+
+#add{
+  margin-left: 87px;
+  margin-top:0px;
+}
+
+#header{
+  width:120px;
+}
+
+#remove{
+  margin-left: 80px;
+}
+
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+
+input {
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  border: solid 3px rgb(238, 254, 11);
+  border-radius: 100px;
+  padding: 20px 30px;
+  margin: 30px; 
+  margin-top: 10px;  
+  font-family:"Comic Sans MS", cursive; 
+}
+
+button{
+  margin: 20px;
+  margin-left: 0px;
+  padding: 20px;
+  height: 60px;
+  width: 130px;
+  border-radius: 65px;
+  font-family:"Comic Sans MS", cursive ;
+  color:yellow;
+  background-color: red;
+}
+
+button:hover{
+  color:red;
+  background-color: yellow;
+  transition: 0.25s;
+  opacity: 0.9;
+
+}
+
+#listItem{
+  height: 60px;
+  width: 180px;
+}
+
+p{
+  margin-left: 120px;
+  margin-bottom: 10px;
+}

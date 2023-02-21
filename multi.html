@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: #344fd9;
+            border-radius: 28px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+    }
+    
+        .btn:hover {
+            background: #222ce6;
+            text-decoration: none;
+    }
+    
+        p{
+            color: #a40b0b;
+        }
+        body{
+            background-color: #fdffdb;
+            text-align: center;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            background-color: #e0e019;
+        }
+        #number{
+            text-align: center;
+            font-size: 20px;
+        }
+        #output{
+            font-size: 20px;
+        }
+    
+    </style>
+    <script>
+        function Multiply() {
+          var number;
+          var output = "";
+  
+          number = Number(document.getElementById("number").value);
+  
+          for(var i = 1; i<= 10; i++){
+            output = output + " <p> " + number + " X " + i + " = " + number * i + " </p> ";
+          }
+  
+          document.getElementById("output").innerHTML = output;
+        }
+  </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter the number :</h2> <input id="number" type="number" /><br>
+        <button class="btn" onclick="Multiply()">The Tables Are:</button>
+        <div id="output">
+</body>
+</html>
+

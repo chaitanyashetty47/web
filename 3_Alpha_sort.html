@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+
+      *
+      {
+        margin: 20px;
+        padding: 5px;
+        box-sizing: border-box;
+        border-width: 4px;
+        border-radius: 20px;  
+      }
+
+      body
+      {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-stretch: wider;
+        font-weight: bold;
+        font-size: x-large;
+        color:rgb(11, 93, 93);
+        background-position: 100%;
+        margin: auto;
+      }
+
+      .container
+      {
+        display: flex;
+        height: 550;
+        width: 550;
+        
+        margin: auto;
+        margin-top: 50px;
+      }
+
+      .contents
+      {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(237, 172, 32);
+        border-radius: 20px;
+
+      }
+
+      #sortbutton
+      {
+        background-color: rgb(212, 177, 34);
+        border-radius: 15px;
+        width: 100px;
+        height: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      #sortbutton:hover
+      {
+        cursor:pointer;
+        background-color:rgb(236, 25, 25);
+      }
+
+     
+      ::-webkit-input-placeholder 
+      {
+        text-align: center;
+      }
+
+    </style>
+
+
+    <script>
+      function sort() 
+      {
+        var string;
+        
+        string = String(document.getElementById("input1").value);
+
+        var splittedstring = string.split(" ");
+        var sortedstring = splittedstring.sort();
+      
+        var output = sortedstring;
+
+        /*document.write(sortedstring);*/
+
+        document.getElementById("output").innerHTML = output;
+
+      }
+    </script>
+
+  </head>
+
+
+  <body>
+
+    <div class="container">
+
+        <div class = "contents">
+
+          <p>ENTER THE STRING</p>
+          <br>
+          <input type="text" id="input1">
+          <br><br>
+          <input type="button" id="sortbutton" onclick="sort()" value="Sort"/>
+          <br>
+            
+          <div id="output">
+          </div>
+
+        </div>
+
+    </div>
+
+  </body>
+
+  
+</html>

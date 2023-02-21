@@ -1,0 +1,21 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+}
+
+.sTable{
+    display: grid;
+    width: 25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
